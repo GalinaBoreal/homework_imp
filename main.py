@@ -5,7 +5,6 @@ from colorama import init, Fore, Back, Style
 from application.db.people import get_employees
 from application.salary import calculate_salary
 
-
 init(autoreset=True)  # Initializes Colorama
 
 
@@ -26,6 +25,7 @@ class Accountant:
 def accountant(name):
     accountant = Accountant(name)
     accountant.payment()
+
 
 if __name__ == '__main__':
     accountant('Петрова Надежда')
